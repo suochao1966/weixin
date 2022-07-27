@@ -4,11 +4,6 @@ import com.tencent.wxcloudrun.config.ApiResponse;
 import com.tencent.wxcloudrun.utils.HttpUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-
 /**
  * @author suochao
  * @date 2022/7/27 1:27 下午
