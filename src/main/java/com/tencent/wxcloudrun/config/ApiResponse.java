@@ -25,6 +25,10 @@ public final class ApiResponse {
     return new ApiResponse(0, "", data);
   }
 
+  public static ApiResponse ok(Object data,String message) {
+    return new ApiResponse(0, message, data);
+  }
+
   public static ApiResponse error(String errorMsg) {
     return new ApiResponse(0, errorMsg, new HashMap<>());
   }

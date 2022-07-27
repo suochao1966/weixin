@@ -37,7 +37,7 @@ public class CounterController {
    * @return API response json
    */
   @GetMapping(value = "/api/count")
-  ApiResponse get() {
+  ApiResponse get(String message) {
     logger.info("/api/count get request");
     Optional<Counter> counter = counterService.getCounter(1);
     Integer count = 0;
@@ -45,7 +45,7 @@ public class CounterController {
       count = counter.get().getCount();
     }
 
-    return ApiResponse.ok(count);
+    return ApiResponse.ok(count,message);
   }
 
 
